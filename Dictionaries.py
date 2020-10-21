@@ -21,4 +21,12 @@ friends = (
 #to get a friends name, in this case fiend #0's name
 print(friends[0]["name"])
 #get the age for Anne
+
 print(friends[2]["age"])
+
+#you can turn something in to a dictionary by using dict
+friends = [("Rolf", 24), ("Adam", 30), ("Anne", 27)]
+#turns friends into a dictionary
+friend_ages = dict(friends)
+#print the new dictionary
+print(friend_ages)
