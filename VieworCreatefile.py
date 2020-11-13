@@ -11,12 +11,12 @@ def choice():
         namefile()
 
 def namefile():
+    description = yamlfile['info']['description']
     namefile = input ("What is the name of the file to create?:")
     #open in "w" mode creates new file, "a" is append
-    textforfile = input("what text should be in the file?:")
-    with open(namefile, "w") as file100:
-        file100.write(textforfile)
-        file100.close()
+    with open(namefile, "w") as myfile:
+        myfile.write(description)
+        myfile.close()
         choice()
 
 def openfile():
