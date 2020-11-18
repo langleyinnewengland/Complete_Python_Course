@@ -1,7 +1,11 @@
 import yaml
-a_yaml_file = open("11_9_swagger.yaml")
+filename = input("What YAML file would you like to open?: ")
+info = input("what information would you like to list (t)ags or (d)escriptionn?"
+a_yaml_file = open(filename)
 #asssigns the contact to yamlfile
 yamlfile = yaml.load(a_yaml_file, Loader= yaml.FullLoader)
+
+#assign components of file to variables
 description = yamlfile['info']['description']
 tags = yamlfile['tags']
 specifictags = yamlfile['tags'][0]['name']
@@ -10,6 +14,10 @@ method=yamlfile['paths']['/cff/app/api/accountbalances/']['delete']
 responses=yamlfile['paths']['/cff/app/api/accountbalances/']['delete']['responses']
 teser=yamlfile['paths']
 print(responses)
+
+
+
+
 #print(f"paths = {paths}")
 #print(f"tester = {teser}")
 print(responses)
