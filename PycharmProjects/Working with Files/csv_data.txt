@@ -1,0 +1,4 @@
+name,age,university,degree
+rolf,26,mit,computer science
+peter,30,emerson,beer
+anna,30,oxford,pysics
